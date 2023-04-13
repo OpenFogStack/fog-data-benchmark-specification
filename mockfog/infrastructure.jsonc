@@ -1,0 +1,321 @@
+{
+    "aws": {
+        "ec2_region": "eu-central-1",
+        "ssh_key_name": "mockfog",
+        "agent_port": 3100
+    },
+    "machines": [
+        {
+            "machine_name": "haleakala_sensors",
+            "type": "m5.24xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 75.0,
+            "mem": "76800m"
+        },
+        {
+            "machine_name": "kilauea_sensors",
+            "type": "m5.24xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 75.0,
+            "mem": "76800m"
+        },
+        {
+            "machine_name": "hualalai_sensors",
+            "type": "m5.24xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 75.0,
+            "mem": "76800m"
+        },
+        {
+            "machine_name": "mauna_kea_sensors",
+            "type": "m5.24xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 75.0,
+            "mem": "76800m"
+        },
+        {
+            "machine_name": "mauna_loa_sensors",
+            "type": "m5.24xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 75.0,
+            "mem": "76800m"
+        },
+        {
+            "machine_name": "kamaehuakanaloa_sensors",
+            "type": "m5.24xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 75.0,
+            "mem": "76800m"
+        },
+        {
+            "machine_name": "haleakala_gw",
+            "type": "t3.xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 4,
+            "mem": "4m"
+        },
+        {
+            "machine_name": "kilauea_gw",
+            "type": "t3.xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 4,
+            "mem": "4m"
+        },
+        {
+            "machine_name": "hualalai_gw",
+            "type": "t3.xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 4,
+            "mem": "4m"
+        },
+        {
+            "machine_name": "mauna_kea_gw",
+            "type": "t3.xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 4,
+            "mem": "4m"
+        },
+        {
+            "machine_name": "mauna_loa_gw",
+            "type": "t3.xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 4,
+            "mem": "4m"
+        },
+        {
+            "machine_name": "kamaehuakanaloa_gw",
+            "type": "t3.xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 4,
+            "mem": "4m"
+        },
+        {
+            "machine_name": "onprem_hilo",
+            "type": "m5.4xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 0.5,
+            "mem": "48000m"
+        },
+        {
+            "machine_name": "cloud_0",
+            "type": "m5.12xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 48,
+            "mem": "96000m"
+        },
+        {
+            "machine_name": "cloud_1",
+            "type": "m5.12xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 48,
+            "mem": "96000m"
+        },
+        {
+            "machine_name": "cloud_2",
+            "type": "m5.12xlarge",
+            "image": "ami-0aa9794817db273c1",
+            "cpu": 48,
+            "mem": "96000m"
+        }
+    ],
+    "connections": [
+        {
+            "from": "haleakala_sensors",
+            "to": "haleakala_gw",
+            "delay": 174.76088128590598,
+            "delay-distro": 87.38044064295299,
+            "rate": "22.0kbps",
+            "duplicate": 5,
+            "loss": 5,
+            "corrupt": 5,
+            "reordering": 5
+        },
+        {
+            "from": "kilauea_sensors",
+            "to": "kilauea_gw",
+            "delay": 187.607284162938,
+            "delay-distro": 93.803642081469,
+            "rate": "22.0kbps",
+            "duplicate": 5,
+            "loss": 5,
+            "corrupt": 5,
+            "reordering": 5
+        },
+        {
+            "from": "hualalai_sensors",
+            "to": "hualalai_gw",
+            "delay": 93.42161270499,
+            "delay-distro": 46.710806352495,
+            "rate": "22.0kbps",
+            "duplicate": 5,
+            "loss": 5,
+            "corrupt": 5,
+            "reordering": 5
+        },
+        {
+            "from": "mauna_kea_sensors",
+            "to": "mauna_kea_gw",
+            "delay": 109.62859711662,
+            "delay-distro": 54.81429855831,
+            "rate": "22.0kbps",
+            "duplicate": 5,
+            "loss": 5,
+            "corrupt": 5,
+            "reordering": 5
+        },
+        {
+            "from": "mauna_loa_sensors",
+            "to": "mauna_loa_gw",
+            "delay": 155.1528776898,
+            "delay-distro": 77.5764388449,
+            "rate": "22.0kbps",
+            "duplicate": 5,
+            "loss": 5,
+            "corrupt": 5,
+            "reordering": 5
+        },
+        {
+            "from": "kamaehuakanaloa_sensors",
+            "to": "kamaehuakanaloa_gw",
+            "delay": 71.781085128174,
+            "delay-distro": 35.890542564087,
+            "rate": "22.0kbps",
+            "duplicate": 5,
+            "loss": 5,
+            "corrupt": 5,
+            "reordering": 5
+        },
+        {
+            "from": "haleakala_sensors",
+            "to": "haleakala_gw",
+            "delay": 1395.899160599112,
+            "delay-distro": 139.5899160599112,
+            "rate": "1.0gbps",
+            "duplicate": 0.1,
+            "loss": 0.1,
+            "corrupt": 0.1,
+            "reordering": 0.1
+        },
+        {
+            "from": "kilauea_sensors",
+            "to": "kilauea_gw",
+            "delay": 341.25545561780405,
+            "delay-distro": 34.1255455617804,
+            "rate": "1.0gbps",
+            "duplicate": 0.1,
+            "loss": 0.1,
+            "corrupt": 0.1,
+            "reordering": 0.1
+        },
+        {
+            "from": "hualalai_sensors",
+            "to": "hualalai_gw",
+            "delay": 708.9188249033041,
+            "delay-distro": 70.8918824903304,
+            "rate": "1.0gbps",
+            "duplicate": 0.1,
+            "loss": 0.1,
+            "corrupt": 0.1,
+            "reordering": 0.1
+        },
+        {
+            "from": "mauna_kea_sensors",
+            "to": "mauna_kea_gw",
+            "delay": 712.1112711136,
+            "delay-distro": 213.63338133408,
+            "rate": "0.001gbps",
+            "duplicate": 1,
+            "loss": 1,
+            "corrupt": 1,
+            "reordering": 1
+        },
+        {
+            "from": "mauna_loa_sensors",
+            "to": "mauna_loa_gw",
+            "delay": 1042.8146284883,
+            "delay-distro": 312.84438854649,
+            "rate": "0.001gbps",
+            "duplicate": 1,
+            "loss": 1,
+            "corrupt": 1,
+            "reordering": 1
+        },
+        {
+            "from": "kamaehuakanaloa_sensors",
+            "to": "kamaehuakanaloa_gw",
+            "delay": 1661.4374583377798,
+            "delay-distro": 498.431237501334,
+            "rate": "0.001gbps",
+            "duplicate": 1,
+            "loss": 1,
+            "corrupt": 1,
+            "reordering": 1
+        },
+        {
+            "from": "onprem_hilo",
+            "to": "cloud_0",
+            "delay": 35823.586329078484,
+            "delay-distro": 3582.358632907848,
+            "rate": "1.0gbps",
+            "duplicate": 0.1,
+            "loss": 0.1,
+            "corrupt": 0.1,
+            "reordering": 0.1
+        },
+        {
+            "from": "onprem_hilo",
+            "to": "cloud_1",
+            "delay": 35823.586329078484,
+            "delay-distro": 3582.358632907848,
+            "rate": "1.0gbps",
+            "duplicate": 0.1,
+            "loss": 0.1,
+            "corrupt": 0.1,
+            "reordering": 0.1
+        },
+        {
+            "from": "onprem_hilo",
+            "to": "cloud_2",
+            "delay": 35823.586329078484,
+            "delay-distro": 3582.358632907848,
+            "rate": "1.0gbps",
+            "duplicate": 0.1,
+            "loss": 0.1,
+            "corrupt": 0.1,
+            "reordering": 0.1
+        },
+        {
+            "from": "cloud_0",
+            "to": "cloud_1",
+            "delay": 0.0,
+            "delay-distro": 0.0,
+            "rate": "10000mbps",
+            "duplicate": 0.1,
+            "loss": 0.1,
+            "corrupt": 0.1,
+            "reordering": 0.1
+        },
+        {
+            "from": "cloud_0",
+            "to": "cloud_2",
+            "delay": 0.0,
+            "delay-distro": 0.0,
+            "rate": "10000mbps",
+            "duplicate": 0.1,
+            "loss": 0.1,
+            "corrupt": 0.1,
+            "reordering": 0.1
+        },
+        {
+            "from": "cloud_1",
+            "to": "cloud_2",
+            "delay": 0.0,
+            "delay-distro": 0.0,
+            "rate": "10000mbps",
+            "duplicate": 0.1,
+            "loss": 0.1,
+            "corrupt": 0.1,
+            "reordering": 0.1
+        }
+    ]
+}
