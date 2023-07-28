@@ -8,16 +8,21 @@ If you use this software in a publication, please cite it as:
 
 ### Text
 
-T. Pfandzelter and D. Bermbach, **Towards a Benchmark for Fog Data Processing**, 2023, arxiv:2304.09026.
+T. Pfandzelter and D. Bermbach, **Towards a Benchmark for Fog Data Processing**. 11th IEEE International Conference on Cloud Engineering (IC2E 2023). Boston, MA, USA. IEEE 2023.
 
 ### BibTeX
 
 ```bibtex
-@article{pfandzelter2023benchmark,
-    title = "Towards a Benchmark for Fog Data Processing",
+@inproceedings{pfandzelter2023benchmark,
     author = "Pfandzelter, Tobias and Bermbach, David",
-    journal = "arxiv:2304.09026 [cs.DC]",
+    title = "Towards a Benchmark for Fog Data Processing",
+    booktitle = "Proceedings of the 11th IEEE International Conference on Cloud Engineering",
+    month = sep,
     year = 2023,
+    publisher = "IEEE",
+    address = "New York, NY, USA",
+    series = "IC2E 2023",
+    location = "Boston, MA, USA",
 }
 ```
 
